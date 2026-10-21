@@ -89,6 +89,10 @@ shellcheck also runs on all scripts.
 
 **Not tested in CI:** writing real `/proc/<pid>/oom_score_adj`, the `sudo -n` paths, real swapfile creation (`--apply`), actually starting earlyoom, the `.bashrc` hook in a real login, and real Chrome or CDP. The design comes from a setup that ran on a real multi-agent box. This repo is a clean rewrite and has not run on a live box as is. Linux only; it needs bash 4+, `flock`, `pgrep` and `curl`.
 
+## Authorship
+
+Built with AI coding assistance. I defined the requirements, ran the tests, and reviewed the changes.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

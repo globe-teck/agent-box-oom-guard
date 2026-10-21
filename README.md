@@ -1,5 +1,7 @@
 # agent-box-oom-guard
 
+[![CI](https://github.com/leighsrodney-prog/agent-box-oom-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/leighsrodney-prog/agent-box-oom-guard/actions/workflows/ci.yml)
+
 A priority-aware out-of-memory guard for a shared Linux machine running several AI agents, each with its own browser.
 
 ## The problem
@@ -41,7 +43,7 @@ Default in the ensure script: `earlyoom -m 5 -s 10 -r 3600 -p --avoid '^(Xvfb|Xo
 ## Install
 
 ```bash
-git clone <this repo> ~/agent-box-oom-guard
+git clone https://github.com/leighsrodney-prog/agent-box-oom-guard.git ~/agent-box-oom-guard
 ~/agent-box-oom-guard/bin/swapfile_setup.sh --size 4G             # review the plan
 ~/agent-box-oom-guard/bin/swapfile_setup.sh --size 4G --apply
 sudo apt-get install -y earlyoom                                  # optional but recommended
@@ -89,4 +91,4 @@ shellcheck also runs on all scripts.
 
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
